@@ -1,0 +1,163 @@
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.Heading {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+h1,
+h2,
+h3,
+input,
+button {
+  font-family: 'Press Start 2P', system-ui;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 14px 14px;
+  background: #000;
+  gap: 14px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+header input {
+  flex-grow: 1;
+  border-radius: 14px;
+  outline: none;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 14px 18px;
+}
+
+header button {
+  border-radius: 14px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: opacity 200ms, background-color 200ms;
+}
+
+header button:hover {
+  background-color: #555;
+  color: #0f0;
+}
+
+p {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: #222;
+  color: #fff;
+}
+
+.todoItem p {
+  flex: 1;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.actionsContainer button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  cursor: pointer;
+  transition: opacity 200ms, background-color 200ms;
+}
+
+.actionsContainer button:hover {
+  background-color: #555;
+}
+
+@media (min-width: 640px) {
+  header button,
+  header input {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+.todoItem.completed p {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.inputContainer input {
+  flex-grow: 1;
+  border-radius: 14px;
+  outline: none;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 14px 18px;
+}
+
+.InputButton {
+  border-radius: 14px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: opacity 200ms, background-color 200ms;
+}
+
+.InputButton:hover {
+  background-color: #555;
+  color: #0f0;
+}
+
+.InputButton:active {
+  background-color: #666;
+  color: #fff;
+}
